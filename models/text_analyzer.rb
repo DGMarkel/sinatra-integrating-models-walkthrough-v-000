@@ -4,11 +4,11 @@ class TextAnalyzer
 
   def initialize(text)
     @text = text.downcase
-  end 
+  end
 
   def count_of_words
-    words = @text.split
-    words.count 
+    words = @text.split(" ")
+    words.count
   end
 
 end
