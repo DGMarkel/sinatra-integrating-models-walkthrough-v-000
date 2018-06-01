@@ -10,7 +10,7 @@ class TextAnalyzer
     words = text.split(" ")
     words.count
   end
-  
+
  def count_of_vowels
    text.scan(/[aeoui]/).count
  end
@@ -21,6 +21,7 @@ class TextAnalyzer
 
  def most_used_letter
    s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
+   binding.pry
    arr = s1.split('')
    arr1 = arr.uniq
    arr2 = {}
